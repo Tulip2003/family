@@ -1,0 +1,60 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Roomies room rent website UI">
+  <title>Post Room | Roomies</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body class="">
+<header class="site-header">
+  <div class="container navbar">
+    <a class="logo" href="index.html" aria-label="Roomies home"><img src="assets/logo.svg" alt="Roomies logo"></a>
+    <nav class="nav-links"><a data-nav href="index.html" class="">Home</a><a data-nav href="search.html" class="">Search</a><a data-nav href="search.html" class="">Rooms</a><a data-nav href="how-it-works.html" class="">How It Works</a><a data-nav href="index.html#about" class="">About Us</a></nav>
+    <div class="nav-actions">
+      <a class="btn btn-outline" href="login.html">Login</a>
+      <a class="btn btn-primary" href="signup.html">Sign Up</a>
+    </div>
+    <button class="hamburger" id="navToggle" aria-label="Open menu">☰</button>
+  </div>
+</header>
+<main class="page">
+
+<section class="post-layout container">
+  <div class="post-card soft-card">
+    <p class="eyebrow">Owner panel</p><h1>Post Your Room</h1>
+    <div class="wizard" id="postWizard"><div class="wizard-step active"><span class="step-dot">1</span><span>Basic Info</span></div><div class="wizard-step"><span class="step-dot">2</span><span>Room Details</span></div><div class="wizard-step"><span class="step-dot">3</span><span>Amenities</span></div><div class="wizard-step"><span class="step-dot">4</span><span>Photos</span></div><div class="wizard-step"><span class="step-dot">5</span><span>Availability</span></div></div>
+    <form id="postRoomForm">
+      <div class="form-panel active"><div class="form-grid"><div class="field"><label>Location</label><input name="location" placeholder="Enter location" required></div><div class="field"><label>Move In Date</label><input name="move_in" type="date"></div><div class="field"><label>Room Type</label><select name="room_type"><option value="single">Single Room</option><option value="shared">Shared Room</option><option value="private" selected>Private Room</option><option value="entire">Entire Place</option></select></div><div class="field"><label>Monthly Price</label><input name="price" placeholder="Rs. 8,500" required></div></div></div>
+      <div class="form-panel"><div class="form-grid"><div class="field"><label>Title</label><input name="title" placeholder="Enter room title" required></div><div class="field"><label>Deposit</label><input name="deposit" placeholder="Deposit amount"></div><div class="field" style="grid-column:1/-1"><label>Description</label><textarea name="description" rows="6" maxlength="1000" placeholder="Describe your room, amenities, and nearby places..." required></textarea></div></div></div>
+      <div class="form-panel"><div class="check-list grid grid-2"><label><input type="checkbox" name="amenities" value="WiFi"> WiFi</label><label><input type="checkbox" name="amenities" value="Kitchen"> Kitchen</label><label><input type="checkbox" name="amenities" value="Parking"> Parking</label><label><input type="checkbox" name="amenities" value="Hot Water"> Hot Water</label><label><input type="checkbox" name="amenities" value="Air Conditioning"> Air Conditioning</label><label><input type="checkbox" name="amenities" value="Security"> Security</label></div></div>
+      <div class="form-panel"><div class="field"><label>Upload Room Photos</label><input type="file" multiple><input name="image_url" placeholder="Or paste image URL" style="margin-top:10px"></div><p class="muted small">Recommended: 4 to 8 bright photos in JPG or PNG format.</p></div>
+      <div class="form-panel"><div class="form-grid"><div class="field"><label>Available From</label><input name="available_from" type="date"></div><div class="field"><label>Minimum Stay</label><select name="min_stay"><option>1 month</option><option>3 months</option><option>6 months</option></select></div></div></div>
+      <div class="form-buttons"><button type="button" class="btn btn-outline" id="prevStep">Back</button><button type="button" class="btn btn-primary" id="nextStep">Next</button><button type="button" class="btn btn-primary hidden" id="finishPost">Post Room</button></div>
+    </form>
+  </div>
+</section>
+
+</main>
+<footer class="site-footer">
+  <div class="container footer-grid">
+    <div class="footer-col">
+      <img src="assets/logo.svg" alt="Roomies" style="height:40px;width:auto;margin-bottom:12px">
+      <p class="muted">Roomies helps you find the best rooms for rent near you. Easy, fast, and secure.</p>
+      <p class="small">✦ Facebook &nbsp; ✦ Twitter &nbsp; ✦ Instagram &nbsp; ✦ LinkedIn</p>
+    </div>
+    <div class="footer-col"><h4>Company</h4><a href="index.html#about">About Us</a><a href="how-it-works.html">How It Works</a><a href="contact.html">Contact Us</a><a href="404.html">Careers</a></div>
+    <div class="footer-col"><h4>Support</h4><a href="contact.html">Help Center</a><a href="404.html">Safety Tips</a><a href="404.html">Privacy Policy</a><a href="404.html">Terms & Conditions</a></div>
+    <div class="footer-col"><h4>For Owners</h4><a href="post-room.html">Post Your Room</a><a href="listings.html">Manage Listings</a><a href="404.html">Owner Guide</a></div>
+    <div class="footer-col"><h4>Subscribe to our newsletter</h4><p class="muted small">Get the latest updates and offers.</p><form class="newsletter"><input type="email" name="email" placeholder="Enter your email" required><button class="btn btn-primary">➜</button></form></div>
+  </div>
+  <div class="footer-art"></div>
+  <div class="copyright">© 2026 Roomies. All rights reserved.</div>
+</footer>
+<script src="js/app.js"></script>
+</body>
+</html>

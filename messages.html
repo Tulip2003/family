@@ -1,0 +1,48 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Roomies room rent website UI">
+  <title>Messages | Roomies</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body class="">
+<header class="site-header">
+  <div class="container navbar">
+    <a class="logo" href="index.html" aria-label="Roomies home"><img src="assets/logo.svg" alt="Roomies logo"></a>
+    <nav class="nav-links"><a data-nav href="index.html" class="">Home</a><a data-nav href="search.html" class="">Search</a><a data-nav href="search.html" class="">Rooms</a><a data-nav href="how-it-works.html" class="">How It Works</a><a data-nav href="index.html#about" class="">About Us</a></nav>
+    <div class="nav-actions">
+      <a class="btn btn-outline" href="login.html">Login</a>
+      <a class="btn btn-primary" href="signup.html">Sign Up</a>
+    </div>
+    <button class="hamburger" id="navToggle" aria-label="Open menu">☰</button>
+  </div>
+</header>
+<main class="page">
+<div class="dashboard-shell"><aside class="sidebar"><nav class="sidebar-menu"><a class="" href="dashboard.html"><span>▣</span>Overview</a><a class="" href="listings.html"><span>⌂</span>My Listings</a><a class="" href="post-room.html"><span>＋</span>Add New Listing</a><a class="active" href="messages.html"><span>☏</span>Messages</a><a class="" href="favorites.html"><span>♡</span>Favorites</a><a class="" href="bookings.html"><span>◴</span>Bookings</a><a class="" href="profile.html"><span>⚙</span>Profile Settings</a><a class="" href="login.html"><span>↪</span>Logout</a></nav></aside><section class="dash-main">
+<div class="dash-top"><div><h1>Messages</h1><p class="muted">Chat with owners and renters.</p></div></div>
+<div class="message-layout"><div class="contacts-list"><div class="contact-item active" data-name="Sarah Johnson"><img src="assets/avatar.svg" alt="Sarah"><div><b>Sarah Johnson</b><p class="muted small">Hi, is the room still available?</p></div></div><div class="contact-item" data-name="Michael Brown"><img src="assets/avatar.svg" alt="Michael"><div><b>Michael Brown</b><p class="muted small">Thanks for the information.</p></div></div><div class="contact-item" data-name="Emily Davis"><img src="assets/avatar.svg" alt="Emily"><div><b>Emily Davis</b><p class="muted small">When can I schedule a visit?</p></div></div><div class="contact-item" data-name="David Wilson"><img src="assets/avatar.svg" alt="David"><div><b>David Wilson</b><p class="muted small">Perfect, I will book it.</p></div></div></div><div class="chat"><div class="chat-head"><img src="assets/avatar.svg" alt="Avatar"><div><b id="chatName">Sarah Johnson</b><p class="muted small">Online</p></div></div><div class="chat-body"><div class="bubble">Hi, is the room still available?</div><div class="bubble me">Yes, it is available.</div><div class="bubble">Great! When can I come for a visit?</div><div class="bubble me">How about tomorrow at 3 PM?</div><div class="bubble">That works for me. See you tomorrow!</div></div><form class="chat-input" data-demo><input placeholder="Type a message..."><button class="btn btn-primary">➤</button></form></div></div>
+</section></div>
+</main>
+<footer class="site-footer">
+  <div class="container footer-grid">
+    <div class="footer-col">
+      <img src="assets/logo.svg" alt="Roomies" style="height:40px;width:auto;margin-bottom:12px">
+      <p class="muted">Roomies helps you find the best rooms for rent near you. Easy, fast, and secure.</p>
+      <p class="small">✦ Facebook &nbsp; ✦ Twitter &nbsp; ✦ Instagram &nbsp; ✦ LinkedIn</p>
+    </div>
+    <div class="footer-col"><h4>Company</h4><a href="index.html#about">About Us</a><a href="how-it-works.html">How It Works</a><a href="contact.html">Contact Us</a><a href="404.html">Careers</a></div>
+    <div class="footer-col"><h4>Support</h4><a href="contact.html">Help Center</a><a href="404.html">Safety Tips</a><a href="404.html">Privacy Policy</a><a href="404.html">Terms & Conditions</a></div>
+    <div class="footer-col"><h4>For Owners</h4><a href="post-room.html">Post Your Room</a><a href="listings.html">Manage Listings</a><a href="404.html">Owner Guide</a></div>
+    <div class="footer-col"><h4>Subscribe to our newsletter</h4><p class="muted small">Get the latest updates and offers.</p><form class="newsletter"><input type="email" name="email" placeholder="Enter your email" required><button class="btn btn-primary">➜</button></form></div>
+  </div>
+  <div class="footer-art"></div>
+  <div class="copyright">© 2026 Roomies. All rights reserved.</div>
+</footer>
+<script src="js/app.js"></script>
+</body>
+</html>

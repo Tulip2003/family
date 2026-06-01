@@ -1,0 +1,57 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Roomies Pro advanced no-payment room rent platform">
+  <title>Map Search | Roomies Pro</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
+  <link rel="manifest" href="manifest.webmanifest">
+</head>
+<body>
+<header class="site-header">
+  <div class="container navbar">
+    <a class="logo" href="index.html" aria-label="Roomies home"><img src="assets/logo.svg" alt="Roomies logo"></a>
+    <nav class="nav-links"><a data-nav href="index.html">Home</a><a data-nav href="search.html">Search</a><a data-nav href="map.html">Map</a><a data-nav href="how-it-works.html">How It Works</a><a data-nav href="safety.html">Safety</a></nav>
+    <div class="nav-actions"><a class="btn btn-outline" href="login.html">Login</a><a class="btn btn-primary" href="signup.html">Sign Up</a></div>
+    <button class="hamburger" id="navToggle" aria-label="Open menu">☰</button>
+  </div>
+</header>
+<main class="page">
+
+<section class="section">
+  <div class="container">
+    <div class="section-head"><div><p class="eyebrow">Map search</p><h1>Find rooms by area, radius, and budget</h1><p class="muted">Use coordinates or quick presets to explore nearby rooms. Map tiles use OpenStreetMap when internet is available.</p></div><a class="btn btn-outline" href="search.html">List View</a></div>
+    <form id="mapSearchForm" class="soft-card pro-filter-grid">
+      <div class="field"><label>Keyword</label><input name="q" placeholder="college, furnished, quiet"></div>
+      <div class="field"><label>City</label><select name="location"><option value="kathmandu">Kathmandu</option><option value="lalitpur">Lalitpur</option><option value="pokhara">Pokhara</option><option value="chitwan">Chitwan</option><option value="">All</option></select></div>
+      <div class="field"><label>Latitude</label><input name="lat" value="27.7172"></div>
+      <div class="field"><label>Longitude</label><input name="lng" value="85.3240"></div>
+      <div class="field"><label>Radius km</label><input name="radius" type="number" value="8" min="1" max="100"></div>
+      <div class="field"><label>Max Price</label><input name="max_price" type="number" value="12000"></div>
+      <div class="field"><label>Sort</label><select name="sort"><option>Nearest</option><option>Recommended</option><option>Low price</option><option>Rating</option></select></div>
+      <button class="btn btn-primary" type="submit">Search Map</button>
+    </form>
+    <div class="map-layout">
+      <div class="live-map" id="liveMap"><div class="map-pin">⌖</div><p>Interactive room map</p></div>
+      <div class="map-results" id="mapResults"><div class="empty-state"><h3>Search the map</h3><p class="muted">Rooms will appear here with distance and quick actions.</p></div></div>
+    </div>
+  </div>
+</section>
+</main>
+<footer class="site-footer">
+  <div class="container footer-grid">
+    <div class="footer-col"><img src="assets/logo.svg" alt="Roomies" style="height:40px;width:auto;margin-bottom:12px"><p class="muted">Roomies Pro connects renters and owners with verification, reports, applications, live search, and moderation.</p></div>
+    <div class="footer-col"><h4>Explore</h4><a href="search.html">Search Rooms</a><a href="map.html">Map Search</a><a href="compare.html">Compare Rooms</a><a href="saved-searches.html">Saved Searches</a></div>
+    <div class="footer-col"><h4>Account</h4><a href="dashboard.html">Dashboard</a><a href="applications.html">Applications</a><a href="verification.html">Verification</a><a href="profile.html">Profile</a></div>
+    <div class="footer-col"><h4>Trust</h4><a href="safety.html">Safety Center</a><a href="moderation.html">Admin Moderation</a><a href="contact.html">Contact</a></div>
+    <div class="footer-col"><h4>Subscribe</h4><p class="muted small">Get launch updates.</p><form class="newsletter"><input type="email" name="email" placeholder="Enter your email" required><button class="btn btn-primary">➜</button></form></div>
+  </div>
+  <div class="copyright">© 2026 Roomies Pro. No payment module included.</div>
+</footer>
+<script src="js/app.js"></script>
+</body>
+</html>
