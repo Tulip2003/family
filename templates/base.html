@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="csrf-token" content="{{ csrf_token() }}">
+  <title>{% block title %}Roomies{% endblock %}</title>
+  <link rel="manifest" href="/static/manifest.webmanifest">
+  <link rel="stylesheet" href="/static/css/styles.css">
+</head>
+<body>
+  <header class="topbar">
+    <a class="brand" href="/"><span class="brand-mark">R</span><span>Roomies</span></a>
+    <button class="nav-toggle" data-toggle-nav>☰</button>
+    <nav class="nav" data-nav>
+      <a href="/search">Search</a>
+      <a href="/map">Map</a>
+      <a href="/post-room">Post Room</a>
+      <a href="/safety">Safety</a>
+      <a href="/dashboard">Dashboard</a>
+      {% if current_user %}
+        <span class="nav-user">{{ current_user.name }}</span>
+        <button class="ghost small" data-action="logout">Logout</button>
+      {% else %}
+        <a href="/login" class="ghost-link">Login</a>
+        <a href="/signup" class="button tiny">Signup</a>
+      {% endif %}
+    </nav>
+  </header>
+  <main>{% block content %}{% endblock %}</main>
+  <footer class="footer">
+    <div>
+      <strong>Roomies</strong>
+      <p>Find, verify, compare, and visit rooms across Nepal.</p>
+    </div>
+    <form class="newsletter" data-api-form="/api/newsletter">
+      <input name="email" type="email" placeholder="Email for updates" required>
+      <button>Join</button>
+    </form>
+  </footer>
+  <div id="toast" class="toast" hidden></div>
+  <script src="/static/js/app.js"></script>
+  {% block scripts %}{% endblock %}
+</body>
+</html>

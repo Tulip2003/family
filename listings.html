@@ -1,0 +1,48 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Roomies room rent website UI">
+  <title>My Listings | Roomies</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body class="">
+<header class="site-header">
+  <div class="container navbar">
+    <a class="logo" href="index.html" aria-label="Roomies home"><img src="assets/logo.svg" alt="Roomies logo"></a>
+    <nav class="nav-links"><a data-nav href="index.html" class="">Home</a><a data-nav href="search.html" class="">Search</a><a data-nav href="search.html" class="">Rooms</a><a data-nav href="how-it-works.html" class="">How It Works</a><a data-nav href="index.html#about" class="">About Us</a></nav>
+    <div class="nav-actions">
+      <a class="btn btn-outline" href="login.html">Login</a>
+      <a class="btn btn-primary" href="signup.html">Sign Up</a>
+    </div>
+    <button class="hamburger" id="navToggle" aria-label="Open menu">☰</button>
+  </div>
+</header>
+<main class="page">
+<div class="dashboard-shell"><aside class="sidebar"><nav class="sidebar-menu"><a class="" href="dashboard.html"><span>▣</span>Overview</a><a class="active" href="listings.html"><span>⌂</span>My Listings</a><a class="" href="post-room.html"><span>＋</span>Add New Listing</a><a class="" href="messages.html"><span>☏</span>Messages</a><a class="" href="favorites.html"><span>♡</span>Favorites</a><a class="" href="bookings.html"><span>◴</span>Bookings</a><a class="" href="profile.html"><span>⚙</span>Profile Settings</a><a class="" href="login.html"><span>↪</span>Logout</a></nav></aside><section class="dash-main">
+<div class="dash-top"><div><h1>My Listings</h1><p class="muted">Manage all your posted rooms.</p></div><a class="btn btn-primary" href="post-room.html">Add New Listing</a></div>
+<div class="table-card"><table><thead><tr><th>Room</th><th>Price</th><th>Views</th><th>Inquiries</th><th>Status</th><th>Action</th></tr></thead><tbody><tr><td>Spacious Room in Banasthali</td><td>Rs. 8,500/month</td><td>300</td><td>12</td><td><span class="badge green">Active</span></td><td>✎ 🗑</td></tr><tr><td>Cozy Room Near Thamel</td><td>Rs. 7,000/month</td><td>280</td><td>8</td><td><span class="badge green">Active</span></td><td>✎ 🗑</td></tr><tr><td>Bright Room in Lazimpat</td><td>Rs. 6,500/month</td><td>210</td><td>6</td><td><span class="badge green">Active</span></td><td>✎ 🗑</td></tr><tr><td>Comfortable Room New Baneshwor</td><td>Rs. 6,000/month</td><td>190</td><td>4</td><td><span class="badge pink">Inactive</span></td><td>✎ 🗑</td></tr></tbody></table></div>
+</section></div>
+</main>
+<footer class="site-footer">
+  <div class="container footer-grid">
+    <div class="footer-col">
+      <img src="assets/logo.svg" alt="Roomies" style="height:40px;width:auto;margin-bottom:12px">
+      <p class="muted">Roomies helps you find the best rooms for rent near you. Easy, fast, and secure.</p>
+      <p class="small">✦ Facebook &nbsp; ✦ Twitter &nbsp; ✦ Instagram &nbsp; ✦ LinkedIn</p>
+    </div>
+    <div class="footer-col"><h4>Company</h4><a href="index.html#about">About Us</a><a href="how-it-works.html">How It Works</a><a href="contact.html">Contact Us</a><a href="404.html">Careers</a></div>
+    <div class="footer-col"><h4>Support</h4><a href="contact.html">Help Center</a><a href="404.html">Safety Tips</a><a href="404.html">Privacy Policy</a><a href="404.html">Terms & Conditions</a></div>
+    <div class="footer-col"><h4>For Owners</h4><a href="post-room.html">Post Your Room</a><a href="listings.html">Manage Listings</a><a href="404.html">Owner Guide</a></div>
+    <div class="footer-col"><h4>Subscribe to our newsletter</h4><p class="muted small">Get the latest updates and offers.</p><form class="newsletter"><input type="email" name="email" placeholder="Enter your email" required><button class="btn btn-primary">➜</button></form></div>
+  </div>
+  <div class="footer-art"></div>
+  <div class="copyright">© 2026 Roomies. All rights reserved.</div>
+</footer>
+<script src="js/app.js"></script>
+</body>
+</html>

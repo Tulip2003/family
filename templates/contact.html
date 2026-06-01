@@ -1,0 +1,6 @@
+{% extends "base.html" %}
+{% block title %}Contact Roomies | Roomies{% endblock %}
+{% block content %}
+<section class="page-head"><h1>Contact Roomies</h1><p>Send support, partnership, or safety reports.</p></section>
+<section class="section"><form class="card form-grid" data-api-form="/api/contact"><label>Name<input name="name" required></label><label>Email<input type="email" name="email" required></label><label class="full">Subject<input name="subject" required></label><label class="full">Message<textarea name="message" rows="6" required></textarea></label><button>Send message</button></form></section>
+{% endblock %}

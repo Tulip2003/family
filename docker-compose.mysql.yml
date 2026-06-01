@@ -1,0 +1,15 @@
+services:
+  db:
+    image: mysql:8.4
+    environment:
+      MYSQL_DATABASE: roomies
+      MYSQL_USER: roomies
+      MYSQL_PASSWORD: roomies_password
+      MYSQL_ROOT_PASSWORD: root_password
+    ports:
+      - "3306:3306"
+    volumes:
+      - roomies_mysql:/var/lib/mysql
+
+volumes:
+  roomies_mysql:

@@ -1,0 +1,27 @@
+ROOMIES ENTERPRISE FULL WEBSITE (>20MB)
+
+Correct folder: the folder that contains app.py, requirements.txt, START_WINDOWS.bat, css/, js/, templates/, routes/.
+
+Fast Windows start:
+1. Double-click START_WINDOWS.bat
+2. Open http://127.0.0.1:5000
+
+If cloud dependencies create trouble, use local mode first:
+1. Double-click START_WINDOWS_LITE_LOCAL.bat
+2. Open http://127.0.0.1:5000
+
+Manual commands:
+python -m venv .venv
+.venv\Scripts\activate
+python -m pip install --upgrade pip setuptools wheel
+python -m pip install -r requirements.txt
+python scripts\create_env.py
+python -m flask --app app reset-db
+python app.py
+
+Demo accounts:
+Admin: admin@roomies.local / admin1234
+Owner: demo@roomies.local / demo1234
+Renter: renter@roomies.local / renter1234
+
+Do not paste real database, Brevo, Twilio, or Cloudflare keys in chat. Add them only in .env on your computer/server.
