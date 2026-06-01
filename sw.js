@@ -1,0 +1,1 @@
+const CACHE="roomies-pro-v1";self.addEventListener("install",e=>{e.waitUntil(caches.open(CACHE).then(c=>c.addAll(["index.html","search.html","map.html","css/styles.css","js/app.js","assets/logo.svg"])))});self.addEventListener("fetch",e=>{e.respondWith(caches.match(e.request).then(r=>r||fetch(e.request).catch(()=>caches.match("index.html"))))});

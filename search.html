@@ -1,0 +1,113 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Roomies room rent website UI">
+  <title>Search | Roomies</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body class="">
+<header class="site-header">
+  <div class="container navbar">
+    <a class="logo" href="index.html" aria-label="Roomies home"><img src="assets/logo.svg" alt="Roomies logo"></a>
+    <nav class="nav-links"><a data-nav href="index.html" class="">Home</a><a data-nav href="search.html" class="active">Search</a><a data-nav href="search.html" class="">Rooms</a><a data-nav href="how-it-works.html" class="">How It Works</a><a data-nav href="index.html#about" class="">About Us</a></nav>
+    <div class="nav-actions">
+      <a class="btn btn-outline" href="login.html">Login</a>
+      <a class="btn btn-primary" href="signup.html">Sign Up</a>
+    </div>
+    <button class="hamburger" id="navToggle" aria-label="Open menu">☰</button>
+  </div>
+</header>
+<main class="page">
+
+<section class="section">
+  <div class="container listing-layout">
+    <aside class="filter-box">
+      <h3>Search Filters</h3><p class="muted small">120+ rooms found</p>
+      <form id="filterForm">
+        <div class="field"><label>Location</label><select id="filterLocation"><option value="">All locations</option><option value="kathmandu">Kathmandu, Nepal</option><option value="lalitpur">Lalitpur, Nepal</option><option value="pokhara">Pokhara, Nepal</option></select></div>
+        <div class="field"><label>Budget</label><input id="budgetRange" type="range" min="4000" max="12000" value="12000" step="500"><p id="budgetText" class="muted small"></p></div>
+        <h4>Room Type</h4><div class="check-list"><label><input type="checkbox" name="type" value="single"> Single Room</label><label><input type="checkbox" name="type" value="shared"> Shared Room</label><label><input type="checkbox" name="type" value="private"> Private Room</label></div>
+        <h4>Amenities</h4><div class="check-list"><label><input type="checkbox"> WiFi</label><label><input type="checkbox"> Air Conditioning</label><label><input type="checkbox"> Parking</label><label><input type="checkbox"> Kitchen</label><label><input type="checkbox"> Washer</label></div>
+        <div class="filter-actions"><button class="btn btn-primary" type="submit">Apply Filters</button><button class="btn btn-ghost" type="button" id="clearFilters">Clear All</button></div>
+      </form>
+    </aside>
+    <div>
+      <div class="result-head"><div><p class="eyebrow">Search</p><h2 id="resultCount">120+ rooms found</h2></div><div class="sorter"><span class="muted small">Sort by:</span><select><option>Recommended</option><option>Low price</option><option>Newest</option></select></div></div>
+      <div class="room-list"><article class="room-card" data-room data-location="kathmandu" data-type="private" data-price="8500">
+  <a class="room-img" href="room-details.html"><img src="https://images.unsplash.com/photo-1505693416388-ac5ce068fe85?auto=format&fit=crop&w=900&q=80" alt="Spacious Private Room in Banasthali"></a>
+  <button class="icon-btn heart" aria-label="Save listing">♡</button>
+  <div class="room-body">
+    <div class="room-top"><div><h3 class="room-title"><a href="room-details.html">Spacious Private Room in Banasthali</a></h3><p class="muted small">📍 Banasthali, Kathmandu</p></div><div class="price">Rs. 8,500<span class="small muted"> /month</span></div></div>
+    <div class="meta"><span>🛏 1 Bed</span><span>🚿 1 Bath</span><span>🪑 Furnished</span><span>📶 WiFi</span></div>
+    <div class="amenities"><span>Kitchen</span><span>Parking</span><span>Water</span><span>Security</span></div>
+  </div>
+</article><article class="room-card" data-room data-location="kathmandu" data-type="single" data-price="7000">
+  <a class="room-img" href="room-details.html"><img src="https://images.unsplash.com/photo-1560448204-e02f11c3d0e2?auto=format&fit=crop&w=900&q=80" alt="Cozy Room Near Thamel"></a>
+  <button class="icon-btn heart" aria-label="Save listing">♡</button>
+  <div class="room-body">
+    <div class="room-top"><div><h3 class="room-title"><a href="room-details.html">Cozy Room Near Thamel</a></h3><p class="muted small">📍 Thamel, Kathmandu</p></div><div class="price">Rs. 7,000<span class="small muted"> /month</span></div></div>
+    <div class="meta"><span>🛏 1 Bed</span><span>🚿 1 Bath</span><span>🪑 Furnished</span><span>📶 WiFi</span></div>
+    <div class="amenities"><span>Kitchen</span><span>Parking</span><span>Water</span><span>Security</span></div>
+  </div>
+</article><article class="room-card" data-room data-location="kathmandu" data-type="shared" data-price="6500">
+  <a class="room-img" href="room-details.html"><img src="https://images.unsplash.com/photo-1560185127-6ed189bf02f4?auto=format&fit=crop&w=900&q=80" alt="Bright Room in Lazimpat"></a>
+  <button class="icon-btn heart" aria-label="Save listing">♡</button>
+  <div class="room-body">
+    <div class="room-top"><div><h3 class="room-title"><a href="room-details.html">Bright Room in Lazimpat</a></h3><p class="muted small">📍 Lazimpat, Kathmandu</p></div><div class="price">Rs. 6,500<span class="small muted"> /month</span></div></div>
+    <div class="meta"><span>🛏 1 Bed</span><span>🚿 1 Bath</span><span>🪑 Furnished</span><span>📶 WiFi</span></div>
+    <div class="amenities"><span>Kitchen</span><span>Parking</span><span>Water</span><span>Security</span></div>
+  </div>
+</article><article class="room-card" data-room data-location="kathmandu" data-type="private" data-price="6000">
+  <a class="room-img" href="room-details.html"><img src="https://images.unsplash.com/photo-1598928506311-c55ded91a20c?auto=format&fit=crop&w=900&q=80" alt="Comfortable Room in New Baneshwor"></a>
+  <button class="icon-btn heart" aria-label="Save listing">♡</button>
+  <div class="room-body">
+    <div class="room-top"><div><h3 class="room-title"><a href="room-details.html">Comfortable Room in New Baneshwor</a></h3><p class="muted small">📍 New Baneshwor, Kathmandu</p></div><div class="price">Rs. 6,000<span class="small muted"> /month</span></div></div>
+    <div class="meta"><span>🛏 1 Bed</span><span>🚿 1 Bath</span><span>🪑 Furnished</span><span>📶 WiFi</span></div>
+    <div class="amenities"><span>Kitchen</span><span>Parking</span><span>Water</span><span>Security</span></div>
+  </div>
+</article><article class="room-card" data-room data-location="lalitpur" data-type="private" data-price="7800">
+  <a class="room-img" href="room-details.html"><img src="https://images.unsplash.com/photo-1519710164239-da123dc03ef4?auto=format&fit=crop&w=900&q=80" alt="Peaceful Room in Jawalakhel"></a>
+  <button class="icon-btn heart" aria-label="Save listing">♡</button>
+  <div class="room-body">
+    <div class="room-top"><div><h3 class="room-title"><a href="room-details.html">Peaceful Room in Jawalakhel</a></h3><p class="muted small">📍 Jawalakhel, Lalitpur</p></div><div class="price">Rs. 7,800<span class="small muted"> /month</span></div></div>
+    <div class="meta"><span>🛏 1 Bed</span><span>🚿 1 Bath</span><span>🪑 Furnished</span><span>📶 WiFi</span></div>
+    <div class="amenities"><span>Kitchen</span><span>Parking</span><span>Water</span><span>Security</span></div>
+  </div>
+</article><article class="room-card" data-room data-location="pokhara" data-type="single" data-price="5500">
+  <a class="room-img" href="room-details.html"><img src="https://images.unsplash.com/photo-1616594039964-ae9021a400a0?auto=format&fit=crop&w=900&q=80" alt="Student Room Near Lakeside"></a>
+  <button class="icon-btn heart" aria-label="Save listing">♡</button>
+  <div class="room-body">
+    <div class="room-top"><div><h3 class="room-title"><a href="room-details.html">Student Room Near Lakeside</a></h3><p class="muted small">📍 Lakeside, Pokhara</p></div><div class="price">Rs. 5,500<span class="small muted"> /month</span></div></div>
+    <div class="meta"><span>🛏 1 Bed</span><span>🚿 1 Bath</span><span>🪑 Furnished</span><span>📶 WiFi</span></div>
+    <div class="amenities"><span>Kitchen</span><span>Parking</span><span>Water</span><span>Security</span></div>
+  </div>
+</article></div>
+      <div class="pagination"><a href="#">‹</a><a class="active" href="#">1</a><a href="#">2</a><a href="#">3</a><a href="#">…</a><a href="#">10</a><a href="#">›</a></div>
+    </div>
+  </div>
+</section>
+
+</main>
+<footer class="site-footer">
+  <div class="container footer-grid">
+    <div class="footer-col">
+      <img src="assets/logo.svg" alt="Roomies" style="height:40px;width:auto;margin-bottom:12px">
+      <p class="muted">Roomies helps you find the best rooms for rent near you. Easy, fast, and secure.</p>
+      <p class="small">✦ Facebook &nbsp; ✦ Twitter &nbsp; ✦ Instagram &nbsp; ✦ LinkedIn</p>
+    </div>
+    <div class="footer-col"><h4>Company</h4><a href="index.html#about">About Us</a><a href="how-it-works.html">How It Works</a><a href="contact.html">Contact Us</a><a href="404.html">Careers</a></div>
+    <div class="footer-col"><h4>Support</h4><a href="contact.html">Help Center</a><a href="404.html">Safety Tips</a><a href="404.html">Privacy Policy</a><a href="404.html">Terms & Conditions</a></div>
+    <div class="footer-col"><h4>For Owners</h4><a href="post-room.html">Post Your Room</a><a href="listings.html">Manage Listings</a><a href="404.html">Owner Guide</a></div>
+    <div class="footer-col"><h4>Subscribe to our newsletter</h4><p class="muted small">Get the latest updates and offers.</p><form class="newsletter"><input type="email" name="email" placeholder="Enter your email" required><button class="btn btn-primary">➜</button></form></div>
+  </div>
+  <div class="footer-art"></div>
+  <div class="copyright">© 2026 Roomies. All rights reserved.</div>
+</footer>
+<script src="js/app.js"></script>
+</body>
+</html>
